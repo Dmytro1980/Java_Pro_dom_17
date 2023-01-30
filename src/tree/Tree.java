@@ -21,8 +21,6 @@ public class Tree {
             current.setLeft(addNode(current.getLeft(), value));
         } else if (value > current.getValue()) {
             current.setRight(addNode(current.getRight(), value));
-        } else {
-            return current;
         }
         return current;
     }
